@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AJAX Chat</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="chat.css" rel="stylesheet" type="text/css">
+	<script src="../jquery-3.0.0.js"></script>
+	<script src="chat.js"></script>
+</head>
+<body>
+	<table id="content">
+		<tr>
+			<td>
+				<div id="scroll"></div>
+			</td>
+			<td id="colorpicker">
+				<img src="palette.png" id="palette" alt="Color Palette" border="1">
+				<br>
+				<input id="color" type="hidden" readonly="true" value="#000000">
+				<span id="sampleText">
+					(text will look like this)
+				</span>
+			</td>
+		</tr>
+	</table>
+	<div>
+		<input type="text" id="userName" maxlength="10" size="10">
+		<input type="text" id="messageBox" maxlength="2000" size="50">
+		<input type="button" value="Send" id="send">
+		<input type="button" value="Delete All" id="delete">
+	</div>
+</body>
+</html>
